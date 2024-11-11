@@ -51,11 +51,11 @@ export interface CommonPluginOptions {
   artifactName?: string | ((stats: PerfseeReportStats) => string)
 
   /**
-   * Which toolkit used. e.g. webpack/rollup/esbuild
+   * Which toolkit used. e.g. webpack/rollup/esbuild/rspack
    *
    * @default 'webpack'
    */
-  toolkit?: string
+  toolkit?: 'webpack' | 'rollup' | 'esbuild' | 'rspack'
 
   /**
    * Enable analysis and audit right after bundle emitted.
